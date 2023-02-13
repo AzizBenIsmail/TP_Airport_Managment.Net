@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "Am.core.Domaine/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Am.core.Domaine.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Am.core.Domaine.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Am.core.Domaine/1.0.0": {
+      "type": "project",
+      "path": "../Am.core.Domaine/Am.core.Domaine.csproj",
+      "msbuildProject": "../Am.core.Domaine/Am.core.Domaine.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "Am.core.Domaine >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\aziz2\\.nuget\\packages\\": {},
@@ -39,7 +58,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\AIRPORTMANAGEMENT\\Am.core.Domaine\\Am.core.Domaine.csproj": {
+              "projectPath": "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\AIRPORTMANAGEMENT\\Am.core.Domaine\\Am.core.Domaine.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

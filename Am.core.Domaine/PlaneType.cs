@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Am.core.Domaine
 {
-    internal class PlaneType
-    {
+    public enum PlaneType 
+    { Boeing=1,AirBus=2
     }
 }
