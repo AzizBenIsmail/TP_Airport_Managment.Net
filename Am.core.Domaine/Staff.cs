@@ -19,5 +19,9 @@ namespace Am.core.Domaine
                 + "Function:" + Function + ";"
                 + "Salary:" + Salary;
         }
+        public override string GetPassengerType()
+        {
+            return "I am a Passenger, I am a Staff Member";
+        }
     }
 }

@@ -54,5 +54,10 @@ namespace Am.core.Domaine
                 return lastname == LastName && firstname == FirstName && emailAdresse==EmailAdresse;
         }
 
+        //question 12 Polymorphisme par héritage
+        public virtual string GetPassengerType()
+        {
+            return "I am a Passenger";
+        }
     }
 }

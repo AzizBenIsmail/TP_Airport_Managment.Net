@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Am.core.Domaine
 {
-    internal class Flight
+    public class Flight
     {
         public string Destination { get; set; }
         public string Departure { get; set; }

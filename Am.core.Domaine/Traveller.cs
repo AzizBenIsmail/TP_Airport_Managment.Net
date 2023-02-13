@@ -17,5 +17,10 @@ namespace Am.core.Domaine
                 + "HealthInformation:" + HealthInformation + ";"
                 + "Nationality:" + Nationality;
         }
+
+        public override string GetPassengerType()
+        {
+            return "I am a Traveller";
+        }
     }
 }
