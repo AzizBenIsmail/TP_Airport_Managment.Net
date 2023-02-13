@@ -28,5 +28,31 @@ namespace Am.core.Domaine
                 + "TelNumber:" + TelNumber + ";"
                 + "TelNumber:" + TelNumber;
         }
+
+        //Q11.a
+        public bool CheckProfile(string lastname, string firstname)
+        {
+            if (lastname==LastName && firstname==FirstName) 
+                return true;
+            return false;
+        }
+        /*
+        //Q11.b
+        public bool CheckProfile(string lastname, string firstname, string emailAdresse)
+        {
+            if (lastname == LastName && firstname == FirstName && emailAdresse==EmailAdresse)
+                return true;
+            return false;
+        }
+        */
+        //Q11.c (on a remplacer les 2 fonctions Q11.a et 11.B - c'est comme un optimisation de code mais il est plus difficle et complexe)
+        public bool CheckProfile(string lastname, string firstname, string emailAdresse=null)
+        {   
+            if (emailAdresse==null)
+                return lastname == LastName && firstname == FirstName;
+            else 
+                return lastname == LastName && firstname == FirstName && emailAdresse==EmailAdresse;
+        }
+
     }
 }

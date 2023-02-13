@@ -22,8 +22,8 @@ namespace Am.core.Domaine
         public Plane(PlaneType planetype, int capacity, DateTime manufacturdate) 
         { 
             Capacity = capacity; //on peut this. si on a besoin de précision
-            ManufactureDate = date;
-            MyPlaneType = pt;
+            ManufactureDate = manufacturdate;
+            MyPlaneType = planetype;
         }
 
         public override string ToString()
