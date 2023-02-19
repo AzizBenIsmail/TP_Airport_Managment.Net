@@ -16,8 +16,8 @@ namespace Am.core.Domaine
         public DateTime EffectiveArrival { get; set; }
         public int EstimatedDuration { get; set; }
         public Plane MyPlane { get; set; }
-        public IList<Flight> Flights { get; set;}
-
+        public IList<Passenger> passengers { get; set; }
+        
         public override string ToString()
         {
             return "Destination:" + Destination + ";"

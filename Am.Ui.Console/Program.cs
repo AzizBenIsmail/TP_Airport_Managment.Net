@@ -20,3 +20,13 @@ Plane plane3 = new Plane()
     ManufactureDate = new DateTime(2000,1,1),
     MyPlaneType= PlaneType.Boeing
 };
+
+Passenger passenger = new Passenger();
+passenger.BirthDate = new DateTime(1990, 5, 1);
+//passenger.GetAge1();
+Console.WriteLine(passenger.Age);
+
+int age = 0;
+Passenger passenger1 = new Passenger();
+passenger.GetAge2(new DateTime(1990, 5, 1), ref age);
+Console.WriteLine(age);

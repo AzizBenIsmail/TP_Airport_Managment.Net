@@ -7,16 +7,35 @@ using System.Threading.Tasks;
 
 namespace Am.core.Domaine
 {
-    internal class Passenger
+    public class Passenger
     {
-        public int BirthDate { get; set; }
+        public DateTime BirthDate {
+            get { return BirthDate; }
+            set { BirthDate = value; }
+        }
         public string PassportNumber { get; set; }
         public string EmailAdresse { get; set; }
-
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string TelNumber { get; set; }
-        public IList<Passenger> passengers { get; set; }
+        public IList<Flight> Flights { get; set;}
+        public int Age
+        {
+            //get{
+            //    DateTime now = DateTime.Now;
+            //    int age = now.Year - BirthDate.Year;
+
+            //    if (now < BirthDate.AddYears(age))
+            //    {
+            //        age--;
+            //    }
+
+            //    return age;
+            //}
+            get;
+            set;
+        }
+
 
         public override string ToString()
         {
@@ -25,7 +44,6 @@ namespace Am.core.Domaine
                 + "EmailAdresse:" + EmailAdresse + ";"
                 + "FirstName:" + FirstName + ";"
                 + "LastName:" + LastName + ";"
-                + "TelNumber:" + TelNumber + ";"
                 + "TelNumber:" + TelNumber;
         }
 
@@ -58,6 +76,47 @@ namespace Am.core.Domaine
         public virtual string GetPassengerType()
         {
             return "I am a Passenger";
+        }
+
+        //Question 13
+        public void GetAge(DateTime birthDate, out int calculatedAge)
+        {
+            DateTime now = DateTime.Now;
+            int age = now.Year - birthDate.Year;
+
+            if (now < birthDate.AddYears(age))
+            {
+                age--;
+            }
+
+            calculatedAge = age;
+        }
+
+        // Autres propriétés et méthodes de la classe Passenger
+        public void GetAge1(Passenger aPassenger)
+        {
+            DateTime now = DateTime.Now;
+            int age = now.Year - aPassenger.BirthDate.Year;
+
+            if (now < BirthDate.AddYears(age))
+            {
+                age--;
+            }
+
+            aPassenger.Age = age;
+        }
+
+        public void GetAge2(DateTime birthDate, ref int calculatedAge)
+        {
+            DateTime now = DateTime.Now;
+            int age = now.Year - birthDate.Year;
+
+            if (now < birthDate.AddYears(age))
+            {
+                age--;
+            }
+
+            calculatedAge = age;
         }
     }
 }
