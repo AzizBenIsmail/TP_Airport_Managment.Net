@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\AIRPORTMANAGEMENT\\Am.core.Domaine\\Am.core.Domaine.csproj": {}
+    "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\TP-AIRPORT-MANAGEMENT\\Am.core.Domaine\\Am.core.Domaine.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\AIRPORTMANAGEMENT\\Am.core.Domaine\\Am.core.Domaine.csproj": {
+    "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\TP-AIRPORT-MANAGEMENT\\Am.core.Domaine\\Am.core.Domaine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\AIRPORTMANAGEMENT\\Am.core.Domaine\\Am.core.Domaine.csproj",
+        "projectUniqueName": "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\TP-AIRPORT-MANAGEMENT\\Am.core.Domaine\\Am.core.Domaine.csproj",
         "projectName": "Am.core.Domaine",
-        "projectPath": "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\AIRPORTMANAGEMENT\\Am.core.Domaine\\Am.core.Domaine.csproj",
+        "projectPath": "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\TP-AIRPORT-MANAGEMENT\\Am.core.Domaine\\Am.core.Domaine.csproj",
         "packagesPath": "C:\\Users\\aziz2\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\AIRPORTMANAGEMENT\\Am.core.Domaine\\obj\\",
+        "outputPath": "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\TP-AIRPORT-MANAGEMENT\\Am.core.Domaine\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

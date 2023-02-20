@@ -9,31 +9,29 @@ namespace Am.core.Domaine
 {
     public class Passenger
     {
-        public DateTime BirthDate {
-            get { return BirthDate; }
-            set { BirthDate = value; }
-        }
+        public DateTime BirthDate { get; set; }
         public string PassportNumber { get; set; }
         public string EmailAdresse { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string TelNumber { get; set; }
         public IList<Flight> Flights { get; set;}
+       
+        int age;
+
         public int Age
         {
-            //get{
-            //    DateTime now = DateTime.Now;
-            //    int age = now.Year - BirthDate.Year;
+            get {
+                DateTime now = DateTime.Now;
+                int age = now.Year -BirthDate.Year;
 
-            //    if (now < BirthDate.AddYears(age))
-            //    {
-            //        age--;
-            //    }
-
-            //    return age;
-            //}
-            get;
-            set;
+                if (now < BirthDate.AddYears(age))
+                {
+                    age--;
+                }
+                return age; 
+            }
+            set { age = value; }    
         }
 
 
@@ -79,7 +77,7 @@ namespace Am.core.Domaine
         }
 
         //Question 13
-        public void GetAge(DateTime birthDate, out int calculatedAge)
+        public void GetAge(DateTime birthDate,ref int calculatedAge)
         {
             DateTime now = DateTime.Now;
             int age = now.Year - birthDate.Year;
@@ -93,7 +91,7 @@ namespace Am.core.Domaine
         }
 
         // Autres propriétés et méthodes de la classe Passenger
-        public void GetAge1(Passenger aPassenger)
+        public void GetAge(Passenger aPassenger)
         {
             DateTime now = DateTime.Now;
             int age = now.Year - aPassenger.BirthDate.Year;
@@ -106,17 +104,5 @@ namespace Am.core.Domaine
             aPassenger.Age = age;
         }
 
-        public void GetAge2(DateTime birthDate, ref int calculatedAge)
-        {
-            DateTime now = DateTime.Now;
-            int age = now.Year - birthDate.Year;
-
-            if (now < birthDate.AddYears(age))
-            {
-                age--;
-            }
-
-            calculatedAge = age;
-        }
     }
 }
