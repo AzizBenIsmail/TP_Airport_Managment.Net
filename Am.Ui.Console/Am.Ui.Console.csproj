@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Am.core.Domaine\Am.core.Domaine.csproj" />
+    <ProjectReference Include="..\AM.Core.Domain\AM.Core.Domain.csproj" />
   </ItemGroup>
 
 </Project>

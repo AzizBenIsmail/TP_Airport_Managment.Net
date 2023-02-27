@@ -6,28 +6,28 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "Am.Ui.Console/1.0.0": {
+      "AM.UI.Console/1.0.0": {
         "dependencies": {
-          "Am.core.Domaine": "1.0.0"
+          "AM.Core.Domain": "1.0.0"
         },
         "runtime": {
-          "Am.Ui.Console.dll": {}
+          "AM.UI.Console.dll": {}
         }
       },
-      "Am.core.Domaine/1.0.0": {
+      "AM.Core.Domain/1.0.0": {
         "runtime": {
-          "Am.core.Domaine.dll": {}
+          "AM.Core.Domain.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "Am.Ui.Console/1.0.0": {
+    "AM.UI.Console/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Am.core.Domaine/1.0.0": {
+    "AM.Core.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

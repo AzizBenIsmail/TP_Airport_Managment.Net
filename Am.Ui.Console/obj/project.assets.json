@@ -2,28 +2,28 @@
   "version": 3,
   "targets": {
     "net6.0": {
-      "Am.core.Domaine/1.0.0": {
+      "AM.Core.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
-          "bin/placeholder/Am.core.Domaine.dll": {}
+          "bin/placeholder/AM.Core.Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Am.core.Domaine.dll": {}
+          "bin/placeholder/AM.Core.Domain.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "Am.core.Domaine/1.0.0": {
+    "AM.Core.Domain/1.0.0": {
       "type": "project",
-      "path": "../Am.core.Domaine/Am.core.Domaine.csproj",
-      "msbuildProject": "../Am.core.Domaine/Am.core.Domaine.csproj"
+      "path": "../AM.Core.Domain/AM.Core.Domain.csproj",
+      "msbuildProject": "../AM.Core.Domain/AM.Core.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Am.core.Domaine >= 1.0.0"
+      "AM.Core.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -33,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\TP-AIRPORT-MANAGEMENT\\Am.Ui.Console\\Am.Ui.Console.csproj",
-      "projectName": "Am.Ui.Console",
-      "projectPath": "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\TP-AIRPORT-MANAGEMENT\\Am.Ui.Console\\Am.Ui.Console.csproj",
+      "projectUniqueName": "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\TP-AIRPORT-MANAGEMENT\\AM.UI.Console\\AM.UI.Console.csproj",
+      "projectName": "AM.UI.Console",
+      "projectPath": "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\TP-AIRPORT-MANAGEMENT\\AM.UI.Console\\AM.UI.Console.csproj",
       "packagesPath": "C:\\Users\\aziz2\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\TP-AIRPORT-MANAGEMENT\\Am.Ui.Console\\obj\\",
+      "outputPath": "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\TP-AIRPORT-MANAGEMENT\\AM.UI.Console\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -59,8 +59,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\TP-AIRPORT-MANAGEMENT\\Am.core.Domaine\\Am.core.Domaine.csproj": {
-              "projectPath": "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\TP-AIRPORT-MANAGEMENT\\Am.core.Domaine\\Am.core.Domaine.csproj"
+            "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\TP-AIRPORT-MANAGEMENT\\AM.Core.Domain\\AM.Core.Domain.csproj": {
+              "projectPath": "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\TP-AIRPORT-MANAGEMENT\\AM.Core.Domain\\AM.Core.Domain.csproj"
             }
           }
         }
