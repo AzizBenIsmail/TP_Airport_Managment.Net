@@ -2,6 +2,9 @@
 //using System.Numerics;
 
 using AM.Core.Domain;
+using AM.Core.Extensions;
+using AM.Core.Services;
+
 //TP1. Question 7
 Console.WriteLine("Hello, World!");
 Plane plane= new Plane();
@@ -42,3 +45,19 @@ Passenger passenger3=new Passenger();
 passenger3.BirthDate = new DateTime(2000, 1, 1);
 //passenger3.GetAge(passenger3);
 Console.WriteLine(passenger3.Age);
+
+//tp2 13.c
+IFlightService.GetScore methode1 = delegate (Passenger p) //calcule par nbr de vol
+{
+    return p.Flights.Count();
+}; 
+IFlightService.GetScore methode2 = delegate (Passenger p)  // calcule par nbr de vol det et depar tiunisia
+{
+    
+    return p.Flights.Where(f => f.Destination=="Tunisia" 
+                        || f.Departure =="Tunisia" ).Count();
+};
+IFlightService flightService = new FlightService();
+var passengerSenior = flightService.GetSeniorPassenger(methode2);   
+Flight f= new Flight();
+f.GetDelay();
