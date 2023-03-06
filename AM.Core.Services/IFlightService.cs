@@ -21,6 +21,8 @@ namespace AM.Core.Services
         double GetDurationAverage(string destination);
         IList<Flight> SortFlights();
         IList<Passenger> GetThreeOlderTravellers(Flight flight);
-
+        void ShowGroupedFlights();
+        public delegate int GetScore(Passenger p); // methode annonyme
+        Passenger GetSeniorPassenger(GetScore meth);
     }
 }

@@ -7,6 +7,7 @@ namespace AM.Core.Services
 {
     public class FlightService : IFlightService
     {
+        //Le langage LINQ
         public IList<Flight> Flights { get; set; } //prop
 
         //public IList<DateTime> GetFlightDates(string destination)
@@ -143,6 +144,30 @@ namespace AM.Core.Services
             return (from p in flight.passengers
                     orderby p.Age descending //orderby p.BirthDate
                     select p).Take(3).ToList();
+        }
+
+        public void ShowGroupedFlights()
+        {
+            /*var */ IEnumerable<IGrouping<string,Flight>> result = from f in Flights 
+                         group f by f.Destination;
+            foreach (var grp in result) { 
+            Console.WriteLine(grp.Key);
+                foreach (var f in grp)
+                {
+                    Console.WriteLine(f);
+
+                }
+            }
+        }
+
+        //Les méthodes anonymes
+        public Passenger GetSeniorPassenger(IFlightService.GetScore meth)
+        {
+            var result = (from f in Flights
+                          from p in f.passengers
+                          orderby meth(p) descending
+                          select p).First();
+            return result;
         }
     }
 
