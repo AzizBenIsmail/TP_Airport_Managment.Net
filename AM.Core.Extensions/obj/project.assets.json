@@ -33,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\TP-AIRPORT-MANAGEMENT\\AM.Core.Extensions\\AM.Core.Extensions.csproj",
+      "projectUniqueName": "C:\\Users\\aziz2\\Downloads\\Compressed\\._.Net-main\\AM.Core.Extensions\\AM.Core.Extensions.csproj",
       "projectName": "AM.Core.Extensions",
-      "projectPath": "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\TP-AIRPORT-MANAGEMENT\\AM.Core.Extensions\\AM.Core.Extensions.csproj",
+      "projectPath": "C:\\Users\\aziz2\\Downloads\\Compressed\\._.Net-main\\AM.Core.Extensions\\AM.Core.Extensions.csproj",
       "packagesPath": "C:\\Users\\aziz2\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\TP-AIRPORT-MANAGEMENT\\AM.Core.Extensions\\obj\\",
+      "outputPath": "C:\\Users\\aziz2\\Downloads\\Compressed\\._.Net-main\\AM.Core.Extensions\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -59,8 +59,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\TP-AIRPORT-MANAGEMENT\\AM.Core.Domain\\AM.Core.Domain.csproj": {
-              "projectPath": "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\TP-AIRPORT-MANAGEMENT\\AM.Core.Domain\\AM.Core.Domain.csproj"
+            "C:\\Users\\aziz2\\Downloads\\Compressed\\._.Net-main\\AM.Core.Domain\\AM.Core.Domain.csproj": {
+              "projectPath": "C:\\Users\\aziz2\\Downloads\\Compressed\\._.Net-main\\AM.Core.Domain\\AM.Core.Domain.csproj"
             }
           }
         }

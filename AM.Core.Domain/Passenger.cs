@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,15 +9,29 @@ namespace AM.Core.Domain
 {
     public class Passenger
     {
-        public DateTime BirthDate
-        {
-            get;
-            set;
-        }
+        //public int Id { get; set; }
+
+        [Display(Name = "Date of Birth")]
+        public DateTime BirthDate { get; set; }
+
+        [Key]
+        [MinLength(7, ErrorMessage = "MinLength 7")]
+        [MaxLength(7, ErrorMessage = "MaxLength 7")]
+        //[StringLength(7, MinimumLength = 7, ErrorMessage = "il faut etre 7 characters .. ... ...")]
         public string PassportNumber { get; set; }
+
+        [EmailAddress(ErrorMessage = "une address email invalid .")]
         public string EmailAddress { get; set; }
+
+        [MinLength(3, ErrorMessage = "MinLength 3")]
+        [MaxLength(25, ErrorMessage = "MaxLength 25")]
+        //[StringLength(25, MinimumLength = 3, ErrorMessage = "First entre 3 characters et 25 characters .")]
         public string FirstName { get; set; }
+
         public string LastName { get; set; }
+
+        [Phone(ErrorMessage ="phone number")]
+        //[DataType(DataType.PhoneNumber)]
         public string TelNumber { get; set; }
         public IList<Flight> Flights { get; set; }
         int age;
@@ -90,18 +105,18 @@ namespace AM.Core.Domain
         }
 
         // Autres propriétés et méthodes de la classe Passenger
-        public void GetAge(Passenger aPassenger)
-        {
-            DateTime now = DateTime.Now;
-            int age = now.Year - aPassenger.BirthDate.Year;
+        //public void GetAge(Passenger aPassenger)
+        //{
+        //    DateTime now = DateTime.Now;
+        //    int age = now.Year - aPassenger.BirthDate.Year;
 
-            if (now < BirthDate.AddYears(age))
-            {
-                age--;
-            }
+        //    if (now < BirthDate.AddYears(age))
+        //    {
+        //        age--;
+        //    }
 
-            aPassenger.Age = age;
-        }
+        //    aPassenger.Age = age;
+        //}
 
 
 

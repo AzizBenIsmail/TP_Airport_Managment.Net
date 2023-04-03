@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\TP-AIRPORT-MANAGEMENT\\AM.Core.Services\\AM.Core.Services.csproj": {}
+    "C:\\Users\\aziz2\\Downloads\\Compressed\\._.Net-main\\AM.Core.Services\\AM.Core.Services.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\TP-AIRPORT-MANAGEMENT\\AM.Core.Domain\\AM.Core.Domain.csproj": {
+    "C:\\Users\\aziz2\\Downloads\\Compressed\\._.Net-main\\AM.Core.Domain\\AM.Core.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\TP-AIRPORT-MANAGEMENT\\AM.Core.Domain\\AM.Core.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\aziz2\\Downloads\\Compressed\\._.Net-main\\AM.Core.Domain\\AM.Core.Domain.csproj",
         "projectName": "AM.Core.Domain",
-        "projectPath": "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\TP-AIRPORT-MANAGEMENT\\AM.Core.Domain\\AM.Core.Domain.csproj",
+        "projectPath": "C:\\Users\\aziz2\\Downloads\\Compressed\\._.Net-main\\AM.Core.Domain\\AM.Core.Domain.csproj",
         "packagesPath": "C:\\Users\\aziz2\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\TP-AIRPORT-MANAGEMENT\\AM.Core.Domain\\obj\\",
+        "outputPath": "C:\\Users\\aziz2\\Downloads\\Compressed\\._.Net-main\\AM.Core.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -64,14 +64,14 @@
         }
       }
     },
-    "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\TP-AIRPORT-MANAGEMENT\\AM.Core.Services\\AM.Core.Services.csproj": {
+    "C:\\Users\\aziz2\\Downloads\\Compressed\\._.Net-main\\AM.Core.Services\\AM.Core.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\TP-AIRPORT-MANAGEMENT\\AM.Core.Services\\AM.Core.Services.csproj",
+        "projectUniqueName": "C:\\Users\\aziz2\\Downloads\\Compressed\\._.Net-main\\AM.Core.Services\\AM.Core.Services.csproj",
         "projectName": "AM.Core.Services",
-        "projectPath": "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\TP-AIRPORT-MANAGEMENT\\AM.Core.Services\\AM.Core.Services.csproj",
+        "projectPath": "C:\\Users\\aziz2\\Downloads\\Compressed\\._.Net-main\\AM.Core.Services\\AM.Core.Services.csproj",
         "packagesPath": "C:\\Users\\aziz2\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\TP-AIRPORT-MANAGEMENT\\AM.Core.Services\\obj\\",
+        "outputPath": "C:\\Users\\aziz2\\Downloads\\Compressed\\._.Net-main\\AM.Core.Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -93,8 +93,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\TP-AIRPORT-MANAGEMENT\\AM.Core.Domain\\AM.Core.Domain.csproj": {
-                "projectPath": "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\TP-AIRPORT-MANAGEMENT\\AM.Core.Domain\\AM.Core.Domain.csproj"
+              "C:\\Users\\aziz2\\Downloads\\Compressed\\._.Net-main\\AM.Core.Domain\\AM.Core.Domain.csproj": {
+                "projectPath": "C:\\Users\\aziz2\\Downloads\\Compressed\\._.Net-main\\AM.Core.Domain\\AM.Core.Domain.csproj"
               }
             }
           }

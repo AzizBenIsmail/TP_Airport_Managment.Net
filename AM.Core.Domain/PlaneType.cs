@@ -8,6 +8,6 @@ namespace AM.Core.Domain
 {
     public enum PlaneType
     {
-        BOING=1,AIBUS=2
+        BOING=1,AIRBUS=2
     }
 }
