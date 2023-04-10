@@ -24,10 +24,10 @@ namespace AM.Data.Configurations
             }
             );
             //tp5 Question 1
-            builder.HasDiscriminator<int>("isTraveler")
+            /*builder.HasDiscriminator<int>("isTraveler")
                 .HasValue<Passenger>(0)
                 .HasValue<Traveller>(1)
-                .HasValue<Staff>(2);
+                .HasValue<Staff>(2);*/
         }
     }
 }
