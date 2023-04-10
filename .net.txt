@@ -1,0 +1,3 @@
+add-migration name 
+update-database //meme si mandikech base de donne
+remove migration // tfasa5 e5er migration

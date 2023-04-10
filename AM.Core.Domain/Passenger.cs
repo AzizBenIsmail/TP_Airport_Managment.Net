@@ -26,9 +26,11 @@ namespace AM.Core.Domain
         [MinLength(3, ErrorMessage = "MinLength 3")]
         [MaxLength(25, ErrorMessage = "MaxLength 25")]
         //[StringLength(25, MinimumLength = 3, ErrorMessage = "First entre 3 characters et 25 characters .")]
-        public string FirstName { get; set; }
+       
+        // public string FirstName { get; set; }
+       // public string LastName { get; set; }
 
-        public string LastName { get; set; }
+        public FullName MyFullName { get; set; }
 
         [Phone(ErrorMessage ="phone number")]
         //[DataType(DataType.PhoneNumber)]
@@ -53,15 +55,15 @@ namespace AM.Core.Domain
             return "BirthDate:" + BirthDate + ";"
                 + "PassportNumber:" + PassportNumber + ";"
                 + "EmailAddress:" + EmailAddress + ";"
-                + "FirstName:" + FirstName + ";"
-                + "LastName:" + LastName + ";"
+                + "FirstName:" + MyFullName.FirstName + ";"
+                + "LastName:" + MyFullName.LastName + ";"
                 + "TelNumber:" + TelNumber;
         }
 
         //Question11.a
         public bool CheckProfile(string lastName, string firstName)
         {
-            if (lastName == LastName && firstName == FirstName)
+            if (lastName == MyFullName.LastName && firstName == MyFullName.FirstName)
                 return true;
             return false;
         }
@@ -79,9 +81,9 @@ namespace AM.Core.Domain
         public bool CheckProfile(string lastName, string firstName, string emailAdress = null)
         {
             if (emailAdress == null)
-                return lastName == LastName && firstName == FirstName;
+                return lastName == MyFullName.LastName && firstName == MyFullName.FirstName;
             else
-                return lastName == LastName && firstName == FirstName && emailAdress == EmailAddress;
+                return lastName == MyFullName.LastName && firstName == MyFullName.FirstName && emailAdress == EmailAddress;
         }
 
 

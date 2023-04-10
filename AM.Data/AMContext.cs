@@ -23,6 +23,15 @@ namespace AM.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new PlaneConfig());
+            modelBuilder.ApplyConfiguration(new flightConfig());
+            modelBuilder.ApplyConfiguration(new PassengerConfig());
+        }
+        protected override void ConfigureConventions(ModelConfigurationBuilder configurationBuilder)
+        {
+            configurationBuilder.Properties<DateTime>()
+                .HaveColumnType("date");
         }
     }
+
+        
 }
