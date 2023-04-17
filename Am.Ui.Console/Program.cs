@@ -64,25 +64,100 @@ using AM.Data;
 //f.GetDelay();
 
 //Tp3.III-8
-Plane plane = new Plane()
+//Plane plane = new Plane()
+//{
+//    Capacity = 10,
+//    ManufactureDate = new DateTime(1998, 09, 01, 10, 30, 0),
+//    MyPlaneType = PlaneType.AIRBUS
+//};
+
+//Flight flight = new Flight() { 
+//    Comment = "comment",
+//    Departure="Tunis",
+//    Destination="Algerie",
+//    EffectiveArrival=new DateTime(2023,09,01,12,0,0),
+//    EstimatedDuration=60,
+//    FlightDate=new DateTime(2023,09,01,10,30,0),
+//    MyPlane=plane
+    
+//};
+
+//AMContext aMContext = new AMContext();
+//aMContext.Add(plane);
+//aMContext.Add(flight);
+//aMContext.SaveChanges();
+
+//Tp5 Q8
+
+//Flight flightTest = new Flight()
+//{
+//    Comment = "comment",
+//    Departure = "Tunis",
+//    Destination = "Algerie",
+//    EffectiveArrival = new DateTime(2023, 09, 01, 12, 0, 0),
+//    EstimatedDuration = 60,
+//    FlightDate = new DateTime(2023, 09, 01, 10, 30, 0)
+//};
+
+//Passenger passengerTest = new Passenger()
+//{
+//    BirthDate = new DateTime(2000, 07, 27),
+//    PassportNumber = "1234567",
+//    EmailAddress = "aziz@gmail.com",
+//    MyFullName = new FullName()
+//    {
+        
+//        FirstName="aziz",
+//        LastName="ben ismail"
+//    },
+//     TelNumber= "21438447"
+//};
+
+//Reservation reservation = new Reservation()
+//{
+//Price=200,
+//Seat="A24",
+//Vip=true,
+//MyPassenger=passengerTest,
+//MyFlight=flightTest
+//};
+
+//AMContext aMContext = new AMContext();
+//aMContext.Add(flightTest);
+//aMContext.Add(passengerTest);
+//aMContext.Add(reservation);
+//aMContext.SaveChanges();
+
+//TP5 Q10
+
+Plane planeQ10 = new Plane()
 {
     Capacity = 10,
     ManufactureDate = new DateTime(1998, 09, 01, 10, 30, 0),
     MyPlaneType = PlaneType.AIRBUS
+
 };
 
-Flight flight = new Flight() { 
+Flight flightQ10 = new Flight()
+{
     Comment = "comment",
-    Departure="Tunis",
-    Destination="Algerie",
-    EffectiveArrival=new DateTime(2023,09,01,12,0,0),
-    EstimatedDuration=60,
-    FlightDate=new DateTime(2023,09,01,10,30,0),
-    MyPlane=plane
+    Departure = "Tunis",
+    Destination = "Canada",
+    EffectiveArrival = new DateTime(2023, 09, 01, 12, 0, 0),
+    EstimatedDuration = 60,
+    FlightDate = new DateTime(2023, 09, 01, 10, 30, 0),
+    MyPlane = planeQ10
     
 };
 
+
 AMContext aMContext = new AMContext();
-aMContext.Add(plane);
-aMContext.Add(flight);
-aMContext.SaveChanges();
+//aMContext.Add(flightQ10);
+//aMContext.Add(planeQ10);
+//aMContext.SaveChanges();
+//Console.WriteLine(flightQ10);
+//Console.WriteLine(flightQ10.MyPlane);
+
+Flight flightQ11 = aMContext.Find<Flight>(2);
+Console.WriteLine(flightQ11);
+Console.WriteLine(flightQ11.MyPlane);

@@ -18,6 +18,8 @@ namespace AM.Data
             optionsBuilder.UseSqlServer(@"Data Source=(localdb)\mssqllocaldb; 
                     Initial Catalog = Airport;  
                     Integrated Security = true");
+            //Tp5 Q13
+            optionsBuilder.UseLazyLoadingProxies();
          
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -25,8 +27,12 @@ namespace AM.Data
             modelBuilder.ApplyConfiguration(new PlaneConfig());
             modelBuilder.ApplyConfiguration(new flightConfig());
             modelBuilder.ApplyConfiguration(new PassengerConfig());
-            modelBuilder.Entity<Staff>().ToTable("Staffs");
-            modelBuilder.Entity<Traveller>().ToTable("Travellers");
+            //Tp5 Q5
+            //modelBuilder.Entity<Staff>().ToTable("Staffs");
+            //modelBuilder.Entity<Traveller>().ToTable("Travellers");
+            //Tp5 Q7
+            modelBuilder.ApplyConfiguration(new ReservationConfig());
+
         }
         protected override void ConfigureConventions(ModelConfigurationBuilder configurationBuilder)
         {

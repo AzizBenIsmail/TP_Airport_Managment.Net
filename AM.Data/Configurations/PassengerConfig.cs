@@ -1,4 +1,4 @@
-﻿using AM.Core.Domain;
+﻿    using AM.Core.Domain;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;

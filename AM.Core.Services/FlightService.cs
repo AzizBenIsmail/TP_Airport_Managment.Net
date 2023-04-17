@@ -141,9 +141,10 @@ namespace AM.Core.Services
         }
         public IList<Passenger> GetThreeOlderTravellers(Flight flight)
         {
-            return (from p in flight.passengers
-                    orderby p.Age descending //orderby p.BirthDate
-                    select p).Take(3).ToList();
+            //return (from p in flight.passengers
+            //        orderby p.Age descending //orderby p.BirthDate
+            //        select p).Take(3).ToList();
+            return null;
         }
 
         public void ShowGroupedFlights()
@@ -163,11 +164,12 @@ namespace AM.Core.Services
         //Les méthodes anonymes
         public Passenger GetSeniorPassenger(IFlightService.GetScore meth)
         {
-            var result = (from f in Flights
-                          from p in f.passengers
-                          orderby meth(p) descending
-                          select p).First();
-            return result;
+            //var result = (from f in Flights
+            //              from p in f.passengers
+            //              orderby meth(p) descending
+            //              select p).First();
+            //return result;
+            return null;
         }
     }
 

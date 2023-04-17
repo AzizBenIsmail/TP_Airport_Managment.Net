@@ -35,7 +35,9 @@ namespace AM.Core.Domain
         [Phone(ErrorMessage ="phone number")]
         //[DataType(DataType.PhoneNumber)]
         public string TelNumber { get; set; }
-        public IList<Flight> Flights { get; set; }
+        //tp5 Q6
+        //public IList<Flight> Flights { get; set; }
+        public virtual IList<Reservation> Reservations { get; set; }
         int age;
         public int Age //ecriture full si j'ai un traitement à faire dans get
         {
