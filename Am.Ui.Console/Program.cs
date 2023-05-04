@@ -3,11 +3,12 @@
 
 using AM.Core.Domain;
 using AM.Core.Extensions;
+using AM.Core.Interfaces;
 using AM.Core.Services;
 using AM.Data;
 
 ////TP1. Question 7
-//Console.WriteLine("Hello, World!");
+Console.WriteLine("Hello, World!");
 //Plane plane= new Plane();
 //plane.Capacity = 100;
 //plane.ManufactureDate = new DateTime(2000,1,1);
@@ -79,7 +80,7 @@ using AM.Data;
 //    EstimatedDuration=60,
 //    FlightDate=new DateTime(2023,09,01,10,30,0),
 //    MyPlane=plane
-    
+
 //};
 
 //AMContext aMContext = new AMContext();
@@ -106,7 +107,7 @@ using AM.Data;
 //    EmailAddress = "aziz@gmail.com",
 //    MyFullName = new FullName()
 //    {
-        
+
 //        FirstName="aziz",
 //        LastName="ben ismail"
 //    },
@@ -130,34 +131,79 @@ using AM.Data;
 
 //TP5 Q10
 
-Plane planeQ10 = new Plane()
-{
-    Capacity = 10,
-    ManufactureDate = new DateTime(1998, 09, 01, 10, 30, 0),
-    MyPlaneType = PlaneType.AIRBUS
+//Plane planeQ10 = new Plane()
+//{
+//    Capacity = 10,
+//    ManufactureDate = new DateTime(1998, 09, 01, 10, 30, 0),
+//    MyPlaneType = PlaneType.AIRBUS
 
-};
+//};
 
-Flight flightQ10 = new Flight()
-{
-    Comment = "comment",
-    Departure = "Tunis",
-    Destination = "Canada",
-    EffectiveArrival = new DateTime(2023, 09, 01, 12, 0, 0),
-    EstimatedDuration = 60,
-    FlightDate = new DateTime(2023, 09, 01, 10, 30, 0),
-    MyPlane = planeQ10
-    
-};
+//Flight flightQ10 = new Flight()
+//{
+//    Comment = "comment",
+//    Departure = "Tunis",
+//    Destination = "Canada",
+//    EffectiveArrival = new DateTime(2023, 09, 01, 12, 0, 0),
+//    EstimatedDuration = 60,
+//    FlightDate = new DateTime(2023, 09, 01, 10, 30, 0),
+//    MyPlane = planeQ10
+
+//};
 
 
-AMContext aMContext = new AMContext();
+//AMContext aMContext = new AMContext();
 //aMContext.Add(flightQ10);
 //aMContext.Add(planeQ10);
 //aMContext.SaveChanges();
 //Console.WriteLine(flightQ10);
 //Console.WriteLine(flightQ10.MyPlane);
 
-Flight flightQ11 = aMContext.Find<Flight>(2);
-Console.WriteLine(flightQ11);
-Console.WriteLine(flightQ11.MyPlane);
+//Flight flightQ11 = aMContext.Find<Flight>(2);
+//Console.WriteLine(flightQ11);
+//Console.WriteLine(flightQ11.MyPlane);
+
+//TP6 P partie6
+//AMContext ctxt = new AMContext();
+
+//IRepository<Flight> flightRepository = new Repository<Flight>(ctxt);
+
+//Flight flightQ12 = new Flight()
+//{
+//    Comment = "comment",
+//    Departure = "Tunis",
+//    Destination = "Canada",
+//    EffectiveArrival = new DateTime(2023, 09, 01, 12, 0, 0),
+//    EstimatedDuration = 60,
+//    FlightDate = new DateTime(2023, 09, 01, 10, 30, 0)
+//};
+
+//flightRepository.Add(flightQ12);
+//flightRepository.Commit();
+
+// Q6
+//AMContext ctxt = new AMContext();
+//IRepository<Plane> planeRepository = new Repository<Plane>(ctxt);
+//PlaneService planeService = new PlaneService(planeRepository);
+
+//Plane planeQ10 = new Plane()
+//{
+//    Capacity = 10,
+//    ManufactureDate = new DateTime(1998, 09, 01, 10, 30, 0),
+//    MyPlaneType = PlaneType.AIRBUS
+
+//};
+//planeService.Add(planeQ10);
+
+//IRepository<Flight> flightRepository = new Repository<Flight>(ctxt);
+//FlightService flightService = new FlightService(flightRepository);
+//Flight flightQ12 = new Flight()
+//{
+//    Comment = "comment",
+//    Departure = "Tunis",
+//    Destination = "Canada",
+//    EffectiveArrival = new DateTime(2023, 09, 01, 12, 0, 0),
+//    EstimatedDuration = 60,
+//    FlightDate = new DateTime(2023, 09, 01, 10, 30, 0)
+//};
+//flightService.Add(flightQ12);

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AM.Core.Services
 {
-    public interface IFlightService
+    public interface IFlightService:IService<Flight>
     {
         IList<DateTime> GetFlightDates(string destination);
         void GetFlights(string filterType, string filterValue);
@@ -24,5 +24,10 @@ namespace AM.Core.Services
         void ShowGroupedFlights();
         public delegate int GetScore(Passenger p); // methode annonyme
         Passenger GetSeniorPassenger(GetScore meth);
+
+        // TP6 --> Q2
+        //void Add(Flight flight);
+        //void Delete(Flight flight);
+        //IList<Flight> GetAll();
     }
 }

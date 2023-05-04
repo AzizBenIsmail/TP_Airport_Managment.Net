@@ -2234,6 +2234,16 @@
         "runtime": {
           "bin/placeholder/AM.Core.Domain.dll": {}
         }
+      },
+      "AM.Core.Interfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/AM.Core.Interfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AM.Core.Interfaces.dll": {}
+        }
       }
     }
   },
@@ -7084,11 +7094,17 @@
       "type": "project",
       "path": "../AM.Core.Domain/AM.Core.Domain.csproj",
       "msbuildProject": "../AM.Core.Domain/AM.Core.Domain.csproj"
+    },
+    "AM.Core.Interfaces/1.0.0": {
+      "type": "project",
+      "path": "../AM.Core.Interfaces/AM.Core.Interfaces.csproj",
+      "msbuildProject": "../AM.Core.Interfaces/AM.Core.Interfaces.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "AM.Core.Domain >= 1.0.0",
+      "AM.Core.Interfaces >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.9",
       "Microsoft.EntityFrameworkCore.Proxies >= 6.0.9",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.9",
@@ -7130,6 +7146,9 @@
           "projectReferences": {
             "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\TP-AIRPORT-MANAGEMENT\\AM.Core.Domain\\AM.Core.Domain.csproj": {
               "projectPath": "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\TP-AIRPORT-MANAGEMENT\\AM.Core.Domain\\AM.Core.Domain.csproj"
+            },
+            "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\TP-AIRPORT-MANAGEMENT\\AM.Core.Interfaces\\AM.Core.Interfaces.csproj": {
+              "projectPath": "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\TP-AIRPORT-MANAGEMENT\\AM.Core.Interfaces\\AM.Core.Interfaces.csproj"
             }
           }
         }

@@ -1,12 +1,22 @@
 ﻿using AM.Core.Domain; //ajouter refernce
+using AM.Core.Interfaces;
+using AM.Data;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 
 namespace AM.Core.Services
 {
-    public class FlightService : IFlightService
+    public class FlightService :Service<Flight>, IFlightService
     {
+        //IRepository<Flight> repository;
+        //IUnitOfWork unitOfWork;
+        public FlightService(IUnitOfWork unitOfWork):base(unitOfWork) 
+        {
+            //this.unitOfWork = unitOfWork;
+            //repository = unitOfWork.GetRepository<Flight>();
+        }
+
         //Le langage LINQ
         public IList<Flight> Flights { get; set; } //prop
 
@@ -171,6 +181,24 @@ namespace AM.Core.Services
             //return result;
             return null;
         }
+        //TP6 --> Q2
+        //public void Add(Flight flight)
+        //{
+        //    repository.Add(flight);
+        //    // repository.Commit();
+        //    unitOfWork.Save();
+        //}
+        //public void Delete(Flight flight)
+        //{
+        //    repository.Delete(flight);
+        //    //repository.Commit();
+        //    unitOfWork.Save();
+        //}
+
+        //public IList<Flight> GetAll()
+        //{
+        //    return repository.GetAll();
+        //}
     }
 
 }
