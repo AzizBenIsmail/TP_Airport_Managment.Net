@@ -10,10 +10,17 @@ using System.Threading.Tasks;
 namespace AM.Core.Domain
 {
     //[Table("MyFlight")]
+    public enum City
+    {
+        Tunis=1,
+        Paris=2,
+        London=3,
+        Algerie=4,
+    }
     public class Flight
     {
-        public string Destination { get; set; }
-        public string Departure { get; set; }
+        public City Destination { get; set; }
+        public City Departure { get; set; }
         public DateTime FlightDate { get; set; }
         //[Key] 
         public int FlightId { get; set; }

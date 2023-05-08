@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yMV+Iyj+1S2DqhDbnsx5XBwMKd2rQcpXOoX2zMrHl9YaP/4JFNV5zltDwtnvqjT8iE0pR/AzClYrwhLtSpIxhA==",
+  "dgSpecHash": "+7gOfVSmGu4S87NImm5aJbUTd+afGs4UEW2wrqj5nWmdv/5vrKVDPfSpBM73SCj3V1R+wSA5QfvODx/Lf6EdvQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aziz2\\Downloads\\Compressed\\AirMangTP7-main\\AM.Core.Services\\AM.Core.Services.csproj",
+  "projectFilePath": "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\TP-AIRPORT-MANAGEMENT\\AM.Core.Services\\AM.Core.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aziz2\\.nuget\\packages\\castle.core\\4.4.1\\castle.core.4.4.1.nupkg.sha512",
     "C:\\Users\\aziz2\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

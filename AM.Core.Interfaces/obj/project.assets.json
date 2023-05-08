@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aziz2\\Downloads\\Compressed\\AirMangTP7-main\\AM.Core.Interfaces\\AM.Core.Interfaces.csproj",
+      "projectUniqueName": "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\TP-AIRPORT-MANAGEMENT\\AM.Core.Interfaces\\AM.Core.Interfaces.csproj",
       "projectName": "AM.Core.Interfaces",
-      "projectPath": "C:\\Users\\aziz2\\Downloads\\Compressed\\AirMangTP7-main\\AM.Core.Interfaces\\AM.Core.Interfaces.csproj",
+      "projectPath": "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\TP-AIRPORT-MANAGEMENT\\AM.Core.Interfaces\\AM.Core.Interfaces.csproj",
       "packagesPath": "C:\\Users\\aziz2\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aziz2\\Downloads\\Compressed\\AirMangTP7-main\\AM.Core.Interfaces\\obj\\",
+      "outputPath": "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\TP-AIRPORT-MANAGEMENT\\AM.Core.Interfaces\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

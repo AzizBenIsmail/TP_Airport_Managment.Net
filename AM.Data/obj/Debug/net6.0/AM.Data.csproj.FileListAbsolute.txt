@@ -87,3 +87,5 @@ C:\Users\aziz2\Downloads\Compressed\AirMangTP7-main\AM.Data\obj\Debug\net6.0\ref
 C:\Users\aziz2\Downloads\Compressed\AirMangTP7-main\AM.Data\obj\Debug\net6.0\AM.Data.pdb
 C:\Users\aziz2\Downloads\Compressed\AirMangTP7-main\AM.Data\obj\Debug\net6.0\AM.Data.genruntimeconfig.cache
 C:\Users\aziz2\Downloads\Compressed\AirMangTP7-main\AM.Data\obj\Debug\net6.0\ref\AM.Data.dll
+C:\Users\aziz2\OneDrive\Bureau\.net\TP-AIRPORT-MANAGEMENT\AM.Data\bin\Debug\net6.0\AM.Core.Interfaces.dll
+C:\Users\aziz2\OneDrive\Bureau\.net\TP-AIRPORT-MANAGEMENT\AM.Data\bin\Debug\net6.0\AM.Core.Interfaces.pdb

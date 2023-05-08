@@ -1,14 +1,18 @@
-﻿using AM.Core.Services;
+﻿using AM.Core.Domain;
+using AM.Core.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace AM.UI.WEB.Controllers
 {
     public class FlightController : Controller
     {
         readonly IFlightService flightService;
-        public FlightController(IFlightService flightService) //injection de service
+        readonly IPlaneService planeService;
+        public FlightController(IFlightService flightService, IPlaneService planeService) //injection de service
         {
+            this.planeService = planeService;
             this.flightService = flightService;
         }
         // GET: FlightController
@@ -20,6 +24,13 @@ namespace AM.UI.WEB.Controllers
             return View(flightService.GetAll().Where(f=>f.FlightDate.CompareTo(DateTime.Parse(filter)) == 0));
         }
 
+        public ActionResult SortFlight()
+        {
+            
+            return View("Index",flightService.SortFlights());
+        }
+
+
         // GET: FlightController/Details/5
         public ActionResult Details(int id)
         {
@@ -29,16 +40,21 @@ namespace AM.UI.WEB.Controllers
         // GET: FlightController/Create
         public ActionResult Create()
         {
+            var planes = planeService.GetAll();
+            //ViewBag => relation entre contr et la vue
+            ViewBag.Planes = new SelectList(planes, "PlaneId", "Capacity");
             return View();
         }
 
         // POST: FlightController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(Flight flight)
+
         {
             try
             {
+                flightService.Add(flight);
                 return RedirectToAction(nameof(Index));
             }
             catch

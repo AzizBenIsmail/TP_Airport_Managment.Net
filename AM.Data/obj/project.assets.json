@@ -7118,11 +7118,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aziz2\\Downloads\\Compressed\\AirMangTP7-main\\AM.Data\\AM.Data.csproj",
+      "projectUniqueName": "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\TP-AIRPORT-MANAGEMENT\\AM.Data\\AM.Data.csproj",
       "projectName": "AM.Data",
-      "projectPath": "C:\\Users\\aziz2\\Downloads\\Compressed\\AirMangTP7-main\\AM.Data\\AM.Data.csproj",
+      "projectPath": "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\TP-AIRPORT-MANAGEMENT\\AM.Data\\AM.Data.csproj",
       "packagesPath": "C:\\Users\\aziz2\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aziz2\\Downloads\\Compressed\\AirMangTP7-main\\AM.Data\\obj\\",
+      "outputPath": "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\TP-AIRPORT-MANAGEMENT\\AM.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -7144,11 +7144,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\aziz2\\Downloads\\Compressed\\AirMangTP7-main\\AM.Core.Domain\\AM.Core.Domain.csproj": {
-              "projectPath": "C:\\Users\\aziz2\\Downloads\\Compressed\\AirMangTP7-main\\AM.Core.Domain\\AM.Core.Domain.csproj"
+            "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\TP-AIRPORT-MANAGEMENT\\AM.Core.Domain\\AM.Core.Domain.csproj": {
+              "projectPath": "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\TP-AIRPORT-MANAGEMENT\\AM.Core.Domain\\AM.Core.Domain.csproj"
             },
-            "C:\\Users\\aziz2\\Downloads\\Compressed\\AirMangTP7-main\\AM.Core.Interfaces\\AM.Core.Interfaces.csproj": {
-              "projectPath": "C:\\Users\\aziz2\\Downloads\\Compressed\\AirMangTP7-main\\AM.Core.Interfaces\\AM.Core.Interfaces.csproj"
+            "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\TP-AIRPORT-MANAGEMENT\\AM.Core.Interfaces\\AM.Core.Interfaces.csproj": {
+              "projectPath": "C:\\Users\\aziz2\\OneDrive\\Bureau\\.net\\TP-AIRPORT-MANAGEMENT\\AM.Core.Interfaces\\AM.Core.Interfaces.csproj"
             }
           }
         }

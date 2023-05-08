@@ -374,3 +374,5 @@ C:\Users\aziz2\Downloads\Compressed\AirMangTP7-main\AM.UI.Console\bin\Debug\net6
 C:\Users\aziz2\Downloads\Compressed\AirMangTP7-main\AM.UI.Console\obj\Debug\net6.0\AM.UI.Console.csproj.CopyComplete
 C:\Users\aziz2\Downloads\Compressed\AirMangTP7-main\AM.UI.Console\obj\Debug\net6.0\AM.UI.Console.genruntimeconfig.cache
 C:\Users\aziz2\Downloads\Compressed\AirMangTP7-main\AM.UI.Console\obj\Debug\net6.0\ref\AM.UI.Console.dll
+C:\Users\aziz2\OneDrive\Bureau\.net\TP-AIRPORT-MANAGEMENT\AM.UI.Console\bin\Debug\net6.0\AM.Core.Interfaces.dll
+C:\Users\aziz2\OneDrive\Bureau\.net\TP-AIRPORT-MANAGEMENT\AM.UI.Console\bin\Debug\net6.0\AM.Core.Interfaces.pdb

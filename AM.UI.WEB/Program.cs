@@ -9,7 +9,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IFlightService, FlightService>(); //ijectioon singletion /transient / scooped
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
-builder.Services.AddDbContext<DbContext,AMContext>();
+builder.Services.AddDbContext<DbContext, AMContext>();
+builder.Services.AddScoped<IPlaneService, PlaneService>(); 
 
 var app = builder.Build();
 

@@ -1,4 +1,5 @@
-﻿using AM.UI.WEB.Models;
+﻿using AM.Core.Services;
+using AM.UI.WEB.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -16,6 +17,11 @@ namespace AM.UI.WEB.Controllers
         public IActionResult Index()
         {
             return View();
+        }
+
+        public IActionResult Flight()
+        {
+            return View("Flight/Index");
         }
 
         public IActionResult Privacy()

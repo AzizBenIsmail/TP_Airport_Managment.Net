@@ -39,5 +39,19 @@ namespace AM.Core.Services
         //{
         //    return repository.GetAll();
         //}
+        public IList<Flight> GetFlight(int n)
+        {
+            return GetAll()
+                .OrderByDescending(P=>P.ManufactureDate)
+                .Take(n)
+                .SelectMany(p=>p.Flights)
+                .OrderBy(f=>f.FlightDate)
+                .ToList();
+        }
+        public IList<Passenger> GetPassengers(Plane p) 
+        { return Get(p.PlaneId).Flights.SelectMany(f=>f.Reservations) 
+                .Select(r=>r.MyPassenger)
+                .Distinct().ToList();
+        }
     }
 }

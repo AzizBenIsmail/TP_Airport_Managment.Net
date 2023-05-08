@@ -11,14 +11,17 @@ namespace AM.Core.Services
     {
         //IRepository<Flight> repository;
         //IUnitOfWork unitOfWork;
+        public IList<Flight> Flights { get; set; } //prop
+
         public FlightService(IUnitOfWork unitOfWork):base(unitOfWork) 
         {
             //this.unitOfWork = unitOfWork;
             //repository = unitOfWork.GetRepository<Flight>();
+            Flights = GetAll();
         }
 
         //Le langage LINQ
-        public IList<Flight> Flights { get; set; } //prop
+        //public IList<Flight> Flights { get; set; } //prop
 
         //public IList<DateTime> GetFlightDates(string destination)
         //{
@@ -37,7 +40,7 @@ namespace AM.Core.Services
             //return (from f in Flights 
             //       where f.Destination == destination
             //       select f.FlightDate).ToList();
-            return Flights.Where(f => f.Destination == destination) //Methoded'extention
+            return Flights.Where(f => f.Destination.ToString() == destination) //Methoded'extention
                 .Select(f => f.FlightDate).ToList();
 
         }
@@ -50,7 +53,7 @@ namespace AM.Core.Services
                 case "Destination":
                     foreach (var flight in Flights)
                     {
-                        if (flight.Destination == filterValue)
+                        if (flight.Destination.ToString() == filterValue)
                         {
                             Console.WriteLine(flight);
                         }
@@ -59,7 +62,7 @@ namespace AM.Core.Services
                 case "Departure":
                     foreach (var flight in Flights)
                     {
-                        if (flight.Departure == filterValue)
+                        if (flight.Departure.ToString() == filterValue)
                         {
                             Console.WriteLine(flight);
                         }
@@ -139,7 +142,7 @@ namespace AM.Core.Services
         public double GetDurationAverage(string destination)
         {
             return (from f in Flights
-                    where f.Destination == destination
+                    where f.Destination.ToString() == destination
                     select f.EstimatedDuration).Average();
         }
 
@@ -160,7 +163,7 @@ namespace AM.Core.Services
         public void ShowGroupedFlights()
         {
             /*var */ IEnumerable<IGrouping<string,Flight>> result = from f in Flights 
-                         group f by f.Destination;
+                         group f by f.Destination.ToString();
             foreach (var grp in result) { 
             Console.WriteLine(grp.Key);
                 foreach (var f in grp)

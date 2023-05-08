@@ -13,5 +13,8 @@ namespace AM.Core.Services
         //void Add(Plane plane);
         //void Delete(Plane plane);
         //IList<Plane> GetAll();
+        public IList<Passenger> GetPassengers(Plane p);
+        public IList<Flight> GetFlight(int n);
+
     }
 }
